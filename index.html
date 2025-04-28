@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket - Tudo Fresquinho!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span>SuperMarket</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#features">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Frescor e qualidade em cada produto</h1>
+                <p>No SuperMarket, oferecemos os melhores produtos com preços competitivos e atendimento excepcional. Tudo fresquinho e com a qualidade que você merece.</p>
+                <a href="#products" class="btn">Comprar Agora</a>
+                <a href="#features" class="btn btn-outline">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços</h2>
+                <p>Conheça os diferenciais que fazem do SuperMarket a melhor escolha para suas compras</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Entregamos seus produtos em até 2 horas na região metropolitana. Frescor garantido!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Produtos Orgânicos</h3>
+                    <p>Seção especial com produtos orgânicos e naturais, direto do produtor para sua mesa.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Ofertas Diárias</h3>
+                    <p>Todos os dias temos promoções especiais em diferentes categorias de produtos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Produtos</h2>
+                <p>Descubra nossa seleção de produtos frescos e de alta qualidade</p>
+            </div>
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="fruits">Frutas</button>
+                <button class="filter-btn" data-filter="vegetables">Vegetais</button>
+                <button class="filter-btn" data-filter="meat">Carnes</button>
+                <button class="filter-btn" data-filter="dairy">Laticínios</button>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="fruits">
+                    <div class="product-badge">Promoção</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Maçãs">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Frutas</span>
+                        <h3 class="product-title">Maçãs Frescas</h3>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">R$ 4,99/kg</span>
+                                <span class="old-price">R$ 6,99/kg</span>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-category="vegetables">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tomates">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vegetais</span>
+                        <h3 class="product-title">Tomates Orgânicos</h3>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">R$ 7,99/kg</span>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-category="meat">
+                    <div class="product-badge">Novo</div>
+                    <div class="product-img">
+                        <img src="https://casaefesta.com/wp-content/uploads/2023/01/como-cortar-picanha.jpg" alt="Carne Bovina">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Carnes</span>
+                        <h3 class="product-title">Picanha Premium</h3>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">R$ 59,99/kg</span>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" data-category="dairy">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Queijos">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Laticínios</span>
+                        <h3 class="product-title">Queijo Minas Frescal</h3>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">R$ 12,99/kg</span>
+                                <span class="old-price">R$ 15,99/kg</span>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card" data-category="fruits">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Bananas">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Frutas</span>
+                        <h3 class="product-title">Bananas Prata</h3>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">R$ 3,99/kg</span>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card" data-category="vegetables">
+                    <div class="product-badge">Oferta</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cenouras">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vegetais</span>
+                        <h3 class="product-title">Cenouras Frescas</h3>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">R$ 2,49/kg</span>
+                                <span class="old-price">R$ 3,99/kg</span>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Assine Nossa Newsletter</h2>
+            <p>Receba ofertas exclusivas, novidades e dicas semanais diretamente no seu e-mail</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Seu melhor e-mail" class="newsletter-input" required>
+                <button type="submit" class="newsletter-btn">Assinar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SuperMarket</h3>
+                    <p>O melhor supermercado da região, com produtos frescos e preços competitivos. Qualidade garantida!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#products">Produtos</a></li>
+                        <li><a href="#features">Serviços</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Frutas</a></li>
+                        <li><a href="#">Vegetais</a></li>
+                        <li><a href="#">Carnes</a></li>
+                        <li><a href="#">Laticínios</a></li>
+                        <li><a href="#">Bebidas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Rua das Flores, 123 - Centro</p>
+                        <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                        <p><i class="fas fa-envelope"></i> contato@supermarket.com</p>
+                        <p><i class="fas fa-clock"></i> Seg-Sab: 8h-22h | Dom: 9h-20h</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SuperMarket. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
